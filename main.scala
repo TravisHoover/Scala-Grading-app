@@ -4,6 +4,7 @@
 * Professor Dong
 * April 9, 2017
 * */
+
 import scala.io.Source //necessary library for file I/O
 
 //prompt user for file to read data from
@@ -82,6 +83,9 @@ try {
 } catch {
   case ex : Exception => println(ex, "(C number does not exist)\n")
 }
+
+println("Hit any key to continue...")
+val anyKey = scala.io.StdIn.readLine()
 
 //Print out all values at the end
 try {
