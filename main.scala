@@ -1,10 +1,3 @@
-/*
-* Travis Hoover
-* CSCI 3210 Project 2
-* Professor Dong
-* April 9, 2017
-* */
-
 import scala.io.Source //necessary library for file I/O
 
 //prompt user for file to read data from
@@ -41,7 +34,7 @@ class Student(var id : String, var CLA : String, var OLA : String, var quizzes :
     letterGrade = "D"
   else if (totalPoints >= 60 && totalPoints < 63)
     letterGrade = "D-"
-  else if (totalPoints > 60)
+  else if (totalPoints < 60 && totalPoints >= 0)
     letterGrade = "F"
   else
     println("Error, invalid totalPoints calculation\n")
